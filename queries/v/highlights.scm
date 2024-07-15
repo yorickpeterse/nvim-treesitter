@@ -1,3 +1,5 @@
+(shebang) @keyword.directive
+
 ; Includes
 [
   "import"
@@ -290,6 +292,7 @@
 
 (_
   (line_comment)+ @comment.documentation
+  .
   [
     (function_declaration)
     (type_declaration)
