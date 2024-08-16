@@ -6,6 +6,7 @@ for ft, lang in pairs {
   javascriptreact = "javascript",
   ecma = "javascript",
   jsx = "javascript",
+  gyp = "python",
   html_tags = "html",
   ["typescript.tsx"] = "tsx",
   ["terraform-vars"] = "terraform",
@@ -32,6 +33,8 @@ for ft, lang in pairs {
   py = "python",
   erl = "erlang",
   typ = "typst",
+  pl = "perl",
+  uxn = "uxntal",
 } do
   ts.language.register(lang, ft)
 end
@@ -84,6 +87,7 @@ list.angular = {
     files = { "src/parser.c", "src/scanner.c" },
     generate_requires_npm = true,
   },
+  filetype = "htmlangular",
   maintainers = { "@dlvandenberg" },
   experimental = true,
 }
@@ -94,7 +98,7 @@ list.apex = {
     files = { "src/parser.c" },
     location = "apex",
   },
-  maintainers = { "@aheber" },
+  maintainers = { "@aheber", "@xixiaofinland" },
 }
 
 list.arduino = {
@@ -1328,6 +1332,14 @@ list.nasm = {
   maintainers = { "@ObserverOfTime" },
 }
 
+list.nginx = {
+  install_info = {
+    url = "https://github.com/opa-oz/tree-sitter-nginx",
+    files = { "src/parser.c", "src/scanner.c" },
+  },
+  maintainers = { "@opa-oz" },
+}
+
 list.nickel = {
   install_info = {
     url = "https://github.com/nickel-lang/tree-sitter-nickel",
@@ -1548,6 +1560,15 @@ list.pony = {
     files = { "src/parser.c", "src/scanner.c" },
   },
   maintainers = { "@amaanq", "@mfelsche" },
+}
+
+list.powershell = {
+  install_info = {
+    url = "https://github.com/airbus-cert/tree-sitter-powershell",
+    files = { "src/parser.c", "src/scanner.c" },
+  },
+  filetype = "ps1",
+  maintainers = { "@L2jLiga" },
 }
 
 list.printf = {
@@ -1783,6 +1804,14 @@ list.requirements = {
   readme_name = "pip requirements",
 }
 
+list.rescript = {
+  install_info = {
+    url = "https://github.com/rescript-lang/tree-sitter-rescript",
+    files = { "src/parser.c", "src/scanner.c" },
+  },
+  maintainers = { "@ribru17" },
+}
+
 list.rnoweb = {
   install_info = {
     url = "https://github.com/bamonroe/tree-sitter-rnoweb",
@@ -1879,6 +1908,15 @@ list.scss = {
   maintainers = { "@elianiva" },
 }
 
+list.sflog = {
+  install_info = {
+    url = "https://github.com/aheber/tree-sitter-sfapex",
+    files = { "src/parser.c" },
+    location = "sflog",
+  },
+  maintainers = { "@aheber", "@xixiaofinland" },
+}
+
 list.slang = {
   install_info = {
     url = "https://github.com/theHamsta/tree-sitter-slang",
@@ -1937,7 +1975,7 @@ list.soql = {
     files = { "src/parser.c" },
     location = "soql",
   },
-  maintainers = { "@aheber" },
+  maintainers = { "@aheber", "@xixiaofinland" },
 }
 
 list.sosl = {
@@ -1946,7 +1984,7 @@ list.sosl = {
     files = { "src/parser.c" },
     location = "sosl",
   },
-  maintainers = { "@aheber" },
+  maintainers = { "@aheber", "@xixiaofinland" },
 }
 
 list.sourcepawn = {
@@ -2335,6 +2373,14 @@ list.verilog = {
   maintainers = { "@zegervdv" },
 }
 
+list.vhdl = {
+  install_info = {
+    url = "https://github.com/jpt13653903/tree-sitter-vhdl",
+    files = { "src/parser.c", "src/scanner.c" },
+  },
+  maintainers = { "@jpt13653903" },
+}
+
 list.vhs = {
   install_info = {
     url = "https://github.com/charmbracelet/tree-sitter-vhs",
@@ -2359,6 +2405,14 @@ list.vimdoc = {
   },
   filetype = "help",
   maintainers = { "@clason" },
+}
+
+list.vrl = {
+  install_info = {
+    url = "https://github.com/belltoy/tree-sitter-vrl",
+    files = { "src/parser.c" },
+  },
+  maintainers = { "@belltoy" },
 }
 
 list.vue = {

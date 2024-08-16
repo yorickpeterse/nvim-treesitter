@@ -176,7 +176,7 @@ We are looking for maintainers to add more parsers and to write query files for 
 - [x] [ada](https://github.com/briot/tree-sitter-ada) (maintained by @briot)
 - [x] [agda](https://github.com/tree-sitter/tree-sitter-agda) (maintained by @Decodetalkers)
 - [x] [angular](https://github.com/dlvandenberg/tree-sitter-angular) (experimental, maintained by @dlvandenberg)
-- [x] [apex](https://github.com/aheber/tree-sitter-sfapex) (maintained by @aheber)
+- [x] [apex](https://github.com/aheber/tree-sitter-sfapex) (maintained by @aheber, @xixiaofinland)
 - [x] [arduino](https://github.com/ObserverOfTime/tree-sitter-arduino) (maintained by @ObserverOfTime)
 - [x] [asm](https://github.com/RubixDev/tree-sitter-asm) (maintained by @RubixDev)
 - [x] [astro](https://github.com/virchau13/tree-sitter-astro) (maintained by @virchau13)
@@ -324,6 +324,7 @@ We are looking for maintainers to add more parsers and to write query files for 
 - [x] [mlir](https://github.com/artagnon/tree-sitter-mlir) (experimental, maintained by @artagnon)
 - [x] [muttrc](https://github.com/neomutt/tree-sitter-muttrc) (maintained by @Freed-Wu)
 - [x] [nasm](https://github.com/naclsn/tree-sitter-nasm) (maintained by @ObserverOfTime)
+- [x] [nginx](https://github.com/opa-oz/tree-sitter-nginx) (maintained by @opa-oz)
 - [ ] [nickel](https://github.com/nickel-lang/tree-sitter-nickel)
 - [x] [nim](https://github.com/alaviss/tree-sitter-nim) (maintained by @aMOPel)
 - [x] [nim_format_string](https://github.com/aMOPel/tree-sitter-nim-format-string) (maintained by @aMOPel)
@@ -350,6 +351,7 @@ We are looking for maintainers to add more parsers and to write query files for 
 - [x] [pod](https://github.com/tree-sitter-perl/tree-sitter-pod) (maintained by @RabbiVeesh, @LeoNerd)
 - [x] [Path of Exile item filter](https://github.com/ObserverOfTime/tree-sitter-poe-filter) (experimental, maintained by @ObserverOfTime)
 - [x] [pony](https://github.com/amaanq/tree-sitter-pony) (maintained by @amaanq, @mfelsche)
+- [x] [powershell](https://github.com/airbus-cert/tree-sitter-powershell) (maintained by @L2jLiga)
 - [x] [printf](https://github.com/ObserverOfTime/tree-sitter-printf) (maintained by @ObserverOfTime)
 - [x] [prisma](https://github.com/victorhqc/tree-sitter-prisma) (maintained by @elianiva)
 - [x] [problog](https://github.com/foxyseta/tree-sitter-prolog) (maintained by @foxyseta)
@@ -378,6 +380,7 @@ We are looking for maintainers to add more parsers and to write query files for 
 - [x] [regex](https://github.com/tree-sitter/tree-sitter-regex) (maintained by @theHamsta)
 - [x] [rego](https://github.com/FallenAngel97/tree-sitter-rego) (maintained by @FallenAngel97)
 - [x] [pip requirements](https://github.com/ObserverOfTime/tree-sitter-requirements) (maintained by @ObserverOfTime)
+- [x] [rescript](https://github.com/rescript-lang/tree-sitter-rescript) (maintained by @ribru17)
 - [x] [rnoweb](https://github.com/bamonroe/tree-sitter-rnoweb) (maintained by @bamonroe)
 - [x] [robot](https://github.com/Hubro/tree-sitter-robot) (maintained by @Hubro)
 - [x] [robots](https://github.com/opa-oz/tree-sitter-robots-txt) (maintained by @opa-oz)
@@ -390,14 +393,15 @@ We are looking for maintainers to add more parsers and to write query files for 
 - [x] [scfg](https://github.com/rockorager/tree-sitter-scfg) (maintained by @WhyNotHugo)
 - [ ] [scheme](https://github.com/6cdh/tree-sitter-scheme)
 - [x] [scss](https://github.com/serenadeai/tree-sitter-scss) (maintained by @elianiva)
+- [x] [sflog](https://github.com/aheber/tree-sitter-sfapex) (maintained by @aheber, @xixiaofinland)
 - [x] [slang](https://github.com/theHamsta/tree-sitter-slang) (experimental, maintained by @theHamsta)
 - [x] [slint](https://github.com/slint-ui/tree-sitter-slint) (maintained by @hunger)
 - [x] [smali](https://github.com/tree-sitter-grammars/tree-sitter-smali) (maintained by @amaanq)
 - [x] [smithy](https://github.com/indoorvivants/tree-sitter-smithy) (maintained by @amaanq, @keynmol)
 - [ ] [snakemake](https://github.com/osthomas/tree-sitter-snakemake) (experimental)
 - [x] [solidity](https://github.com/JoranHonig/tree-sitter-solidity) (maintained by @amaanq)
-- [x] [soql](https://github.com/aheber/tree-sitter-sfapex) (maintained by @aheber)
-- [x] [sosl](https://github.com/aheber/tree-sitter-sfapex) (maintained by @aheber)
+- [x] [soql](https://github.com/aheber/tree-sitter-sfapex) (maintained by @aheber, @xixiaofinland)
+- [x] [sosl](https://github.com/aheber/tree-sitter-sfapex) (maintained by @aheber, @xixiaofinland)
 - [x] [sourcepawn](https://github.com/nilshelmig/tree-sitter-sourcepawn) (maintained by @Sarrus1)
 - [x] [sparql](https://github.com/GordianDziwis/tree-sitter-sparql) (maintained by @GordianDziwis)
 - [x] [sql](https://github.com/derekstride/tree-sitter-sql) (maintained by @derekstride)
@@ -444,9 +448,11 @@ We are looking for maintainers to add more parsers and to write query files for 
 - [x] [vala](https://github.com/vala-lang/tree-sitter-vala) (maintained by @Prince781)
 - [x] [vento](https://github.com/ventojs/tree-sitter-vento) (maintained by @wrapperup, @oscarotero)
 - [x] [verilog](https://github.com/tree-sitter/tree-sitter-verilog) (maintained by @zegervdv)
+- [x] [vhdl](https://github.com/jpt13653903/tree-sitter-vhdl) (maintained by @jpt13653903)
 - [x] [vhs](https://github.com/charmbracelet/tree-sitter-vhs) (maintained by @caarlos0)
 - [x] [vim](https://github.com/neovim/tree-sitter-vim) (maintained by @clason)
 - [x] [vimdoc](https://github.com/neovim/tree-sitter-vimdoc) (maintained by @clason)
+- [x] [vrl](https://github.com/belltoy/tree-sitter-vrl) (maintained by @belltoy)
 - [x] [vue](https://github.com/tree-sitter-grammars/tree-sitter-vue) (maintained by @WhyNotHugo, @lucario387)
 - [x] [wgsl](https://github.com/szebniok/tree-sitter-wgsl) (maintained by @szebniok)
 - [x] [wgsl_bevy](https://github.com/theHamsta/tree-sitter-wgsl-bevy) (maintained by @theHamsta)
@@ -536,12 +542,11 @@ require'nvim-treesitter.configs'.setup {
 
 #### Folding
 
-Tree-sitter based folding. _(Technically not a module because it's per windows and not per buffer.)_
+Tree-sitter based folding (implemented in Neovim itself, see `:h vim.treesitter.foldexpr()`). To enable it for the current window, set
 
-```vim
-set foldmethod=expr
-set foldexpr=nvim_treesitter#foldexpr()
-set nofoldenable                     " Disable folding at startup.
+```lua
+vim.wo.foldmethod = 'expr'
+vim.wo.foldexpr = 'v:lua.vim.treesitter.foldexpr()'
 ```
 
 This will respect your `foldminlines` and `foldnestmax` settings.
