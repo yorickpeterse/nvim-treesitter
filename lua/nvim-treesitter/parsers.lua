@@ -633,6 +633,24 @@ list.fusion = {
   maintainers = { "@jirgn" },
 }
 
+list.gap = {
+  install_info = {
+    url = "https://github.com/gap-system/tree-sitter-gap",
+    files = { "src/parser.c", "src/scanner.c" },
+  },
+  maintainers = { "@reiniscirpons" },
+  readme_name = "GAP system",
+}
+
+list.gaptst = {
+  install_info = {
+    url = "https://github.com/gap-system/tree-sitter-gaptst",
+    files = { "src/parser.c", "src/scanner.c" },
+  },
+  maintainers = { "@reiniscirpons" },
+  readme_name = "GAP system test files",
+}
+
 list.gdscript = {
   install_info = {
     url = "https://github.com/PrestonKnopp/tree-sitter-gdscript",
@@ -704,12 +722,32 @@ list.gleam = {
 
 list.glimmer = {
   install_info = {
-    url = "https://github.com/alexlafroscia/tree-sitter-glimmer",
+    url = "https://github.com/ember-tooling/tree-sitter-glimmer",
     files = { "src/parser.c", "src/scanner.c" },
   },
   filetype = "handlebars",
   maintainers = { "@NullVoxPopuli" },
   readme_name = "Glimmer and Ember",
+}
+
+list.glimmer_javascript = {
+  install_info = {
+    url = "https://github.com/NullVoxPopuli/tree-sitter-glimmer-javascript",
+    files = { "src/parser.c", "src/scanner.c" },
+    generate_requires_npm = true,
+  },
+  filetype = "javascript.glimmer",
+  maintainers = { "@NullVoxPopuli" },
+}
+
+list.glimmer_typescript = {
+  install_info = {
+    url = "https://github.com/NullVoxPopuli/tree-sitter-glimmer-typescript",
+    files = { "src/parser.c", "src/scanner.c" },
+    generate_requires_npm = true,
+  },
+  filetype = "typescript.glimmer",
+  maintainers = { "@NullVoxPopuli" },
 }
 
 list.glsl = {
@@ -1495,7 +1533,7 @@ list.php = {
     location = "php",
     files = { "src/parser.c", "src/scanner.c" },
   },
-  maintainers = { "@tk-shirasaka" },
+  maintainers = { "@tk-shirasaka", "@calebdw" },
 }
 
 list.php_only = {
@@ -1504,7 +1542,7 @@ list.php_only = {
     location = "php_only",
     files = { "src/parser.c", "src/scanner.c" },
   },
-  maintainers = { "@tk-shirasaka" },
+  maintainers = { "@tk-shirasaka", "@calebdw" },
 }
 
 -- Parsers for injections
@@ -2508,10 +2546,10 @@ list.zathurarc = {
 
 list.zig = {
   install_info = {
-    url = "https://github.com/maxxnino/tree-sitter-zig",
+    url = "https://github.com/tree-sitter-grammars/tree-sitter-zig",
     files = { "src/parser.c" },
   },
-  maintainers = { "@maxxnino" },
+  maintainers = { "@amaanq" },
 }
 
 list.templ = {

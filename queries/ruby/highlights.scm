@@ -125,9 +125,12 @@
     "__callee__" "__dir__" "__id__" "__method__" "__send__" "__ENCODING__" "__FILE__" "__LINE__"))
 
 ((identifier) @function.builtin
-  (#any-of? @function.builtin
-    "include" "extend" "prepend" "attr_reader" "attr_writer" "attr_accessor" "module_function"
-    "refine" "using"))
+  (#any-of? @function.builtin "attr_reader" "attr_writer" "attr_accessor" "module_function"))
+
+((call
+  !receiver
+  method: (identifier) @function.builtin)
+  (#any-of? @function.builtin "include" "extend" "prepend" "refine" "using"))
 
 ((identifier) @keyword.exception
   (#any-of? @keyword.exception "raise" "fail" "catch" "throw"))
@@ -172,10 +175,10 @@
 ;  (#is-not? local))
 ; Literals
 [
-  (string)
-  (bare_string)
-  (subshell)
-  (heredoc_body)
+  (string_content)
+  (heredoc_content)
+  "\""
+  "`"
 ] @string
 
 [
@@ -190,11 +193,8 @@
   (hash_key_symbol)
 ] @string.special.symbol
 
-(pair
-  key: (hash_key_symbol)
-  ":" @constant)
-
-(regex) @string.regexp
+(regex
+  (string_content) @string.regexp)
 
 (escape_sequence) @string.escape
 
@@ -210,6 +210,11 @@
 (nil) @constant.builtin
 
 (comment) @comment @spell
+
+((program
+  .
+  (comment) @keyword.directive @nospell)
+  (#lua-match? @keyword.directive "^#!/"))
 
 (program
   (comment)+ @comment.documentation
@@ -276,7 +281,14 @@
   ";"
   "."
   "&."
+  "::"
 ] @punctuation.delimiter
+
+(regex
+  "/" @punctuation.bracket)
+
+(pair
+  ":" @punctuation.delimiter)
 
 [
   "("
@@ -289,6 +301,9 @@
   "%i("
 ] @punctuation.bracket
 
+(block_parameters
+  "|" @punctuation.bracket)
+
 (interpolation
   "#{" @punctuation.special
-  "}" @punctuation.special) @none
+  "}" @punctuation.special)
