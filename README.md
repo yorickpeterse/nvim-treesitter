@@ -239,6 +239,7 @@ We are looking for maintainers to add more parsers and to write query files for 
 - [x] [forth](https://github.com/AlexanderBrevig/tree-sitter-forth) (maintained by @amaanq)
 - [x] [fortran](https://github.com/stadelmanma/tree-sitter-fortran) (maintained by @amaanq)
 - [x] [fsh](https://github.com/mgramigna/tree-sitter-fsh) (maintained by @mgramigna)
+- [x] [fsharp](https://github.com/ionide/tree-sitter-fsharp) (maintained by @nsidorenco)
 - [x] [func](https://github.com/amaanq/tree-sitter-func) (maintained by @amaanq)
 - [x] [fusion](https://gitlab.com/jirgn/tree-sitter-fusion.git) (maintained by @jirgn)
 - [x] [GAP system](https://github.com/gap-system/tree-sitter-gap) (maintained by @reiniscirpons)
@@ -415,6 +416,7 @@ We are looking for maintainers to add more parsers and to write query files for 
 - [x] [strace](https://github.com/sigmaSd/tree-sitter-strace) (maintained by @amaanq)
 - [x] [styled](https://github.com/mskelton/tree-sitter-styled) (maintained by @mskelton)
 - [x] [supercollider](https://github.com/madskjeldgaard/tree-sitter-supercollider) (maintained by @madskjeldgaard)
+- [x] [superhtml](https://github.com/kristoff-it/superhtml) (maintained by @rockorager)
 - [x] [surface](https://github.com/connorlay/tree-sitter-surface) (maintained by @connorlay)
 - [x] [svelte](https://github.com/tree-sitter-grammars/tree-sitter-svelte) (maintained by @amaanq)
 - [x] [swift](https://github.com/alex-pinkus/tree-sitter-swift) (maintained by @alex-pinkus)
@@ -469,6 +471,8 @@ We are looking for maintainers to add more parsers and to write query files for 
 - [x] [yuck](https://github.com/Philipp-M/tree-sitter-yuck) (maintained by @Philipp-M, @amaanq)
 - [x] [zathurarc](https://github.com/Freed-Wu/tree-sitter-zathurarc) (maintained by @Freed-Wu)
 - [x] [zig](https://github.com/tree-sitter-grammars/tree-sitter-zig) (maintained by @amaanq)
+- [x] [ziggy](https://github.com/kristoff-it/ziggy) (maintained by @rockorager)
+- [x] [ziggy_schema](https://github.com/kristoff-it/ziggy) (maintained by @rockorager)
 <!--parserinfo-->
 
 For related information on the supported languages, including related plugins, see [this wiki page](https://github.com/nvim-treesitter/nvim-treesitter/wiki/Supported-Languages-Information).

@@ -11,9 +11,6 @@ for ft, lang in pairs {
   ["typescript.tsx"] = "tsx",
   ["terraform-vars"] = "terraform",
   ["html.handlebars"] = "glimmer",
-  pandoc = "markdown",
-  rmd = "markdown",
-  quarto = "markdown",
   dosini = "ini",
   confini = "ini",
   svg = "xml",
@@ -61,7 +58,9 @@ end
 local list = setmetatable({}, {
   __newindex = function(table, parsername, parserconfig)
     rawset(table, parsername, parserconfig)
-    ts.language.register(parsername, parserconfig.filetype or parsername)
+    if parserconfig.filetype or vim.fn.has "nvim-0.11" == 0 then
+      ts.language.register(parsername, parserconfig.filetype or parsername)
+    end
   end,
 })
 
@@ -615,6 +614,15 @@ list.fsh = {
     files = { "src/parser.c" },
   },
   maintainers = { "@mgramigna" },
+}
+
+list.fsharp = {
+  install_info = {
+    url = "https://github.com/ionide/tree-sitter-fsharp",
+    files = { "src/parser.c", "src/scanner.c" },
+    location = "fsharp",
+  },
+  maintainers = { "@nsidorenco" },
 }
 
 list.func = {
@@ -2101,6 +2109,18 @@ list.supercollider = {
   maintainers = { "@madskjeldgaard" },
 }
 
+list.superhtml = {
+  install_info = {
+    url = "https://github.com/kristoff-it/superhtml",
+    files = {
+      "src/parser.c",
+      "src/scanner.c",
+    },
+    location = "tree-sitter-superhtml",
+  },
+  maintainers = { "@rockorager" },
+}
+
 list.surface = {
   install_info = {
     url = "https://github.com/connorlay/tree-sitter-surface",
@@ -2550,6 +2570,24 @@ list.zig = {
     files = { "src/parser.c" },
   },
   maintainers = { "@amaanq" },
+}
+
+list.ziggy = {
+  install_info = {
+    url = "https://github.com/kristoff-it/ziggy",
+    files = { "src/parser.c" },
+    location = "tree-sitter-ziggy",
+  },
+  maintainers = { "@rockorager" },
+}
+
+list.ziggy_schema = {
+  install_info = {
+    url = "https://github.com/kristoff-it/ziggy",
+    files = { "src/parser.c" },
+    location = "tree-sitter-ziggy-schema",
+  },
+  maintainers = { "@rockorager" },
 }
 
 list.templ = {
